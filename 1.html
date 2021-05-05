@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <script>
+        const div = document.createElement("div");
+        document.body.append(div);
+
+        const span = document.createElement("span");
+        span.textContent = "Hello world!";
+        span.style.display = "block";
+        span.style.marginBottom = "20px";
+        div.append(span);
+
+        const input = document.createElement("input");
+        input.setAttribute("type", "text");
+        input.style.display = "block";
+        input.style.marginBottom = "20px";
+        input.value = "Hello cat!";
+        div.append(input);
+
+        const img = document.createElement("img");
+        img.setAttribute("src", "https://zoomagazin.dp.ua/image/catalog/blog-img/koshka-murchit.jpg");
+        img.setAttribute("alt", "cat");
+        div.append(img);
+    </script>
+</body>
+
+</html>

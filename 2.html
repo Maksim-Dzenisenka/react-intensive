@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.9.3/babel.js"></script>
+
+    <script type="text/babel">
+        const div = React.createElement("div", {
+            children: [
+                React.createElement("span", {
+                    key: 0,
+                    style: { display: "block", marginBottom: "20px" }
+                },
+                    "Hello world!"),
+                React.createElement("input", {
+                    key: 1,
+                    type: "text",
+                    style: { display: "block", marginBottom: "20px" },
+                    defaultValue: "Hello cat!"
+                }),
+                React.createElement("img", {
+                    key: 2,
+                    src: "https://zoomagazin.dp.ua/image/catalog/blog-img/koshka-murchit.jpg",
+                    alt: "cat"
+                })
+            ]
+        });
+
+        ReactDOM.render(div, document.body);
+    </script>
+</body>
+
+</html>

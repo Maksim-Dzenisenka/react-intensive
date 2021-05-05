@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.9.3/babel.js"></script>
+
+    <script type="text/babel">
+        function Span(props) {
+            return <span className="content" style={{ ...props.style }}>{props.content}</span>;
+        }
+
+        function Input(props) {
+            return <input className="input" type="text" style={{ ...props.style }} defaultValue="Hello cat!" />;
+        }
+
+        function Img(props) {
+            return <img className="image" src={props.src} alt="cat" />;
+        }
+
+        function App() {
+            return (
+                <div>
+                    <Span style={{ display: "block", marginBottom: 20 }} content="Hello world!" />
+                    <Input style={{ display: "block", marginBottom: 20 }} />
+                    <Img src="https://zoomagazin.dp.ua/image/catalog/blog-img/koshka-murchit.jpg" />
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.body);
+    </script>
+</body>
+
+</html>
